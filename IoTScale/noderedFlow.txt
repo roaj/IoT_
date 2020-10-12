@@ -1,0 +1,193 @@
+[
+    {
+        "id": "b23ddaa6.722878",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "52a98faa.b9293",
+        "type": "file in",
+        "z": "b23ddaa6.722878",
+        "name": "scaleVal",
+        "filename": "/tmp/scaleVal.txt",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "x": 320,
+        "y": 180,
+        "wires": [
+            [
+                "98e37641.3f0bf8"
+            ]
+        ]
+    },
+    {
+        "id": "ea215228.95761",
+        "type": "inject",
+        "z": "b23ddaa6.722878",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "0.2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "52a98faa.b9293"
+            ]
+        ]
+    },
+    {
+        "id": "98e37641.3f0bf8",
+        "type": "mqtt out",
+        "z": "b23ddaa6.722878",
+        "name": "",
+        "topic": "scuttle/data/scale",
+        "qos": "2",
+        "retain": "false",
+        "broker": "1b8ea5cf.d3146a",
+        "x": 510,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "cce73441.9b7938",
+        "type": "file",
+        "z": "b23ddaa6.722878",
+        "name": "scaleVal",
+        "filename": "/tmp/scaleTest.txt",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "utf8",
+        "x": 900,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fbf17687.504428",
+        "type": "mqtt in",
+        "z": "b23ddaa6.722878",
+        "name": "",
+        "topic": "scuttle/data/scale",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "1b8ea5cf.d3146a",
+        "x": 510,
+        "y": 280,
+        "wires": [
+            [
+                "cce73441.9b7938",
+                "ee37d9d.ed5c628",
+                "d2773263.7db33"
+            ]
+        ]
+    },
+    {
+        "id": "ee37d9d.ed5c628",
+        "type": "ui_chart",
+        "z": "b23ddaa6.722878",
+        "name": "",
+        "group": "99fa4f5c.1e0b1",
+        "order": 1,
+        "width": 12,
+        "height": 4,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "10000",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 880,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d2773263.7db33",
+        "type": "ui_text",
+        "z": "b23ddaa6.722878",
+        "group": "99fa4f5c.1e0b1",
+        "order": 3,
+        "width": 4,
+        "height": 2,
+        "name": "",
+        "label": "weight",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 860,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "1b8ea5cf.d3146a",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "HiveMQ",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "99fa4f5c.1e0b1",
+        "type": "ui_group",
+        "z": "",
+        "name": "IoT Scale",
+        "tab": "1c69308.62aa7d",
+        "disp": false,
+        "width": 12,
+        "collapse": false
+    },
+    {
+        "id": "1c69308.62aa7d",
+        "type": "ui_tab",
+        "z": "",
+        "name": "IoTScale",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
