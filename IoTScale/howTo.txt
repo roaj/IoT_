@@ -1,0 +1,129 @@
+/home/debian/bin
+curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
+iwconfig
+sudo connmanctl 
+iiwconfig
+iwconfig
+sudo connmanctl 
+iwconfig
+curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
+arduino-cli
+export PATH=/home/dave/work:$PATH
+export PATH=/home/debian/bin:$PATH
+ls
+cd weight_station/
+bash flash.sh 
+cd /dev/
+ls
+cd serial/
+;s
+ls
+cd by-id/
+ls
+cd
+ls /dev/tty*
+cd weight_station/
+bash flash.sh 
+watch /dev/ttyUSB0
+sudo watch /dev/ttyUSB0
+sudo screen /dev/ttyUSB0
+sudo screen /dev/ttyUSB0 38400
+clear
+sudo pip3 install pyserial
+sudo pip3 install serial
+ls /dev
+python3 io
+screen /dev/ttyUSB0 38400
+cd weight_station/
+python3 iotscale.py 
+sudo pip3 uninstall serial
+python3 iotscale.py 
+python3
+cat iotscale.py 
+python3 iotscale.py 
+sudo pip3 uninstall pyserial
+python3
+sudo apt insatll python3-pyserial
+sudo apt install python3-pyserial
+sudo pip3 install pyserial
+python3
+python3 iotscale.py 
+sudo pip3 install paho-mqtt
+python3 iotscale.py 
+cd weight_station/
+ls
+bash flash.sh 
+ls /dev/
+cd /dev/
+cd serial/
+ls
+cd by-path/
+ls
+cd ..
+cd by-id/
+ls
+cd
+cd weight_station/
+bash flash.sh 
+sudo screen /dev/ttyUSB0 38400
+bash flash.sh 
+sudo screen /dev/ttyUSB0 38400
+bash flash.sh 
+sudo screen /dev/ttyUSB0 38400
+bash flash.sh 
+sudo screen /dev/ttyUSB0 38400
+bash flash.sh 
+sudo screen /dev/ttyUSB0 38400
+bash flash.sh 
+sudo screen /dev/ttyUSB0 38400
+bash flash.sh 
+sudo screen /dev/ttyUSB0 38400
+python3 iotscale.py 
+sudo pip3 install pyserial
+sudo pip install pyserial
+pip install pyserial
+python3 iotscale.py 
+pip install pyserial
+sudo easy_install pip
+sudo easy_install-2.6 pip
+python3
+python3 iotscale.py 
+python3
+cd /tmp
+ls
+cd
+cd weight_station/
+python3 iotscale.py 
+cd 
+cd weight_station/
+ls
+python3 iotscale.py 
+cd
+ping google.com
+sudo connmanctl
+cd /net/connman/service/
+cd ..
+cd /net/connman/service/
+cd /net/connman/service
+ls
+cd opt/scripts/network/
+bash wifi_enterprise.sh 
+ls
+ping google.com
+cd /var/lib/connman
+ls
+sudo rm -rf wifi_6cc374e61ac6_436865727279205374_managed_none/ wifi_6cc374e61ac6_436865727279205374_managed_none/
+sudo rm -rf wifi_6cc374e61ac6_54414d555f57694669_managed_ieee8021x.config wifi_6cc374e61ac6_54414d555f57694669_managed_ieee8021x
+ls
+sudo rm -rf wifi_6cc374e61ac6_4a6f72676527732057694669_managed_psk/
+ls
+cd /opt/script/neetwork
+cd /opt/script/network
+cd
+cd /opt/scripts/network/
+bash wifi_enterprise.sh
+iwconfig
+ping google.com
+sudo connmanctl
+sudo reboot
+
